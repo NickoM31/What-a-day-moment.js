@@ -5,20 +5,20 @@ body {
 }
 input{
 	background-color: #34314c ;
-    color: #47b8e0 ;
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 10px auto;
-    border: #47b8e0  solid 1px;
+	color: #47b8e0 ;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 10px auto;
+	border: #47b8e0  solid 1px;
 
 }
 button{
 	background-color: #34314c ;
-    color: #47b8e0 ;
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 10px auto;
-    border: #47b8e0  solid 1px;
+	color: #47b8e0 ;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 10px auto;
+	border: #47b8e0  solid 1px;
 }
 button:hover{
 	background-color: #47b8e0;
@@ -26,17 +26,23 @@ button:hover{
 }
 select{
 	background-color: #34314c ;
-    color: #47b8e0 ;
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 10px auto;
-    border: #47b8e0  solid 1px;
+	color: #47b8e0 ;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 10px auto;
+	border: #47b8e0  solid 1px;
 }
 div{
 	color : #47b8e0;
 	
 }
 #message1{
+	font-size: 40px;
+	background-color:#ff7473;
+	color:white;
+	height: 50px;
+}
+#message2{
 	font-size: 40px;
 	background-color:#ff7473;
 	color:white;
@@ -55,10 +61,15 @@ div{
 	justify-content: center;
 	align-items: center;
 }
-.restart{
-	background-color: #9055A2;
-}
+.btn{
 
+	background-color: #9055A2;
+	text-align: right;
+}
+.restart{
+	border-radius: 50%;
+	background-color: #D499B9;
+}
 /*#ff7473;
 #fff;
 #34314c;
