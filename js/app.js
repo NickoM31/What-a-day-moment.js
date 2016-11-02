@@ -26,6 +26,7 @@
 				this.confirmTheTime();
 			}else if(this.days >= 32){
 				$("#message1").show();
+				$("#day").css('border-color','#ff7473');
 			//}else if(this.month <= 0){
 			//	$("#message1").show();
 		}else if (this.years <= 0){
@@ -42,7 +43,7 @@
 		$(".overlay").text(theDay.format('dddd'));
 		$(".overlay").css('color', '#D499B9');
 		$(".restart").show();
-		
+
 		$(".cache").hide();
 	},
 

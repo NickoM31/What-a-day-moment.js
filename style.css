@@ -37,8 +37,10 @@ div{
 	
 }
 #message1{
+	font-size: 40px;
 	background-color:#ff7473;
 	color:white;
+	height: 50px;
 }
 #month{
 	background: transparent;
