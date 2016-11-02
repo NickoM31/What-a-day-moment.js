@@ -1,0 +1,67 @@
+body {
+	position: relative;
+	background-color: #34314c;
+
+}
+input{
+	background-color: #34314c ;
+    color: #47b8e0 ;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px auto;
+    border: #47b8e0  solid 1px;
+
+}
+button{
+	background-color: #34314c ;
+    color: #47b8e0 ;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px auto;
+    border: #47b8e0  solid 1px;
+}
+button:hover{
+	background-color: #47b8e0;
+	color: white;
+}
+select{
+	background-color: #34314c ;
+    color: #47b8e0 ;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px auto;
+    border: #47b8e0  solid 1px;
+}
+div{
+	color : #47b8e0;
+	
+}
+#message1{
+	background-color:#ff7473;
+	color:white;
+}
+#month{
+	background: transparent;
+	border-color: #47b8e0;
+}
+.overlay{
+	background-color: #9055A2;
+	font-size: 100pt;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.restart{
+	background-color: #9055A2;
+}
+
+/*#ff7473;
+#fff;
+#34314c;
+#47b8e0;
+#9055A2;
+#D499B9;
+*
+*/
