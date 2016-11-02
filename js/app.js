@@ -14,35 +14,41 @@
 
 		listeners : function(){
 			$('#valid').on('click',this.dataTime.bind(this));
-			
+			$('.restart').on('click',this.reinit.bind(this));
 			
 		},
 
 		dataTime : function(){
-			this.days = $("#day").val();;
+			this.days = $("#day").val();
 			this.month = $("#month").val();
 			this.years = $("#year").val();
 			if(this.days >= 1 && this.days <= 31 && this.years >= 0){
 				this.confirmTheTime();
-			}else if(this.days >= 32){
+			}else if(this.days >= 31){
 				$("#message1").show();
 				$("#day").css('border-color','#ff7473');
+			}else if(this.days === null){
+				$("#message1").show();
+				$("#day").css('border-color','#ff7473');
+
 			}else if (this.years <= 0){
 				$("#message2").show();
+			}else if (this.years === null){
+				$("#message2").show();
+				
 			}
-
 		},
 
 		confirmTheTime : function(){
 			var theDay = moment(this.years + "-" + this.month + "-" + this.days);
 			console.log(theDay.format('dddd'));
-
+			
+				
 			$(".overlay").show();
 			$(".overlay").text(theDay.format('dddd'));
 			$(".overlay").css('color', '#D499B9');
 			$(".restart").show();
 			$(".restart").css('border','#D499B9');
-
 			$(".cache").hide();
 		},
 
@@ -53,12 +59,14 @@
 			$(".restart").hide();
 		},
 
-		
+		reinit : function(){
+			$(".cache").show();
+			$(".overlay").hide();
+			$(".restart").hide();
+			$("#message1").hide();
+			$("#message2").hide();
 
-
-
-
-
+		},
 
 
 	};

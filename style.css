@@ -25,12 +25,15 @@ button:hover{
 	color: white;
 }
 select{
-	background-color: #34314c ;
+	background-color: #34314c;
 	color: #47b8e0 ;
 	font-size: 1.2em;
 	padding: 10px;
 	margin: 10px auto;
 	border: #47b8e0  solid 1px;
+}
+option{
+	background-color: #34314c;
 }
 div{
 	color : #47b8e0;
