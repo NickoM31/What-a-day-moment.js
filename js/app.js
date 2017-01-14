@@ -25,22 +25,23 @@
 				$('#errorEmpty').hide();
 				$("#errorMessageDay").hide();
 				$("#errorMessageYear").hide();
-			}else if (this.days ==="" && this.years === "") {
+			}else if (this.days ==="") {
 				$('#errorEmpty').show();
-				$("#errorMessageDay").css('border-color','#ff7473');
-				$("#errorMessageYear").css('border-color','#ff7473');
-
+				$("#day").css('border-color','#ff7473');
+			}else if (this.years === "") {
+				$('#errorEmpty').show();
+				$("#year").css('border-color','#ff7473');
 			}else if(this.years <= 0) { 
 				$('#errorMessageYear').show();
-				$('##errorMessageYear').css('border-color','#ff7473');
+				$('#year').css('border-color','#ff7473');
 				
 			}else if (this.days <= 0){  
 				$('#errorMessageDay').show();
-				$('#errorMessageDay').css('border-color','#ff7473');
+				$('#day').css('border-color','#ff7473');
 				
 			}else if (this.days >= 32){
 				$('#errorMessageDay').show();
-				$('#errorMessageDay').css('border-color','#ff7473');
+				$('#day').css('border-color','#ff7473');
 				
 			}
 		},
